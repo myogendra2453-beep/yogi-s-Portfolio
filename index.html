@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div id="app">
+
+<!-- LOADING SCREEN -->
+
+
+<div id="app">
   <canvas id="canvas"></canvas>
   <div class="hero">
     <h1>UNDER</h1>
@@ -17,6 +22,18 @@
     <a target="_blank" href="https://www.framer.com/marketplace/components/tubes-cursor/">come visit soon</a>
   </div>
 </div>
+
+<script>
+window.onload = () => {
+  // delay to allow three.js shaders to compile
+  setTimeout(() => {
+    document.getElementById("loader").style.opacity = "0";
+    setTimeout(() => {
+      document.getElementById("loader").remove();
+    }, 600);
+  }, 600);
+};
+</script>
 
 </body>
 </html>
