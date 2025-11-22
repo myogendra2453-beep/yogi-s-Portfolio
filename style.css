@@ -1,4 +1,9 @@
-/* Copyright (c) 2025 by Kevin Levron (https://codepen.io/soju22/pen/qEbdVjK) */
+/* Remove white flash */
+html, body {
+  background: black;
+}
+
+/* Copyright */
 body, html, #app {
   margin: 0;
   width: 100%;
@@ -57,4 +62,9 @@ h2 {
   bottom: 0;
   left: 0;
   overflow: hidden;
+}
+
+/* Fade-out effect for loader */
+#loader {
+  transition: opacity 0.5s ease;
 }
