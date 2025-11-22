@@ -68,3 +68,59 @@ h2 {
 #loader {
   transition: opacity 0.5s ease;
 }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .hero {
+    gap: 6px;
+  }
+
+  #app a {
+    font-size: 14px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  #app a {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
